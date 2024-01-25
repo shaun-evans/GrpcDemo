@@ -21,5 +21,5 @@ void ConfigureRequestPipeline(WebApplication app)
 {
     app.MapGrpcService<GreeterService>();
     app.MapGrpcService<ProductService>();
-    app.MapGet("/", () => $"Communication with gRPC endpoints must be made through a gRPC client. To learn how to create a client, visit: {gRPCClientCreationUrl}");
+    app.MapGet("/", () => $"Communication with gRPC endpoints must be made through a gRPC client.");
 }

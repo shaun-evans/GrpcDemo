@@ -1,9 +1,8 @@
 ﻿using Grpc.Net.Client;
 using GrpcClient;
 using GrpcClient.Protos;
-using Microsoft.Extensions.Configuration;
 
-class Program
+static class Program
 {
     static async Task Main()
     {
