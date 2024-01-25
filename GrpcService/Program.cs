@@ -1,11 +1,6 @@
 using GrpcService.Services;
 
-const string gRPCClientCreationUrl = "https://go.microsoft.com/fwlink/?linkid=2086909";
-
 var builder = WebApplication.CreateBuilder(args);
-
-// Additional configuration is required to successfully run gRPC on macOS.
-// For instructions on how to configure Kestrel and gRPC clients on macOS, visit macOSConfigurationUrl
 
 // Add services to the container.
 RegisterServices(builder.Services);
